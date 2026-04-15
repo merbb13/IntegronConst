@@ -1,0 +1,374 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Integron Construction Limited</title>
+    <link rel="icon" type="image/x-icon" href="assets/logo.ico">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', sans-serif;
+        }
+
+        body {
+            line-height: 1.6;
+        }
+
+        /* HEADER */
+        header {
+            background: #1c1c1c;
+            color: white;
+            padding: 15px 50px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        header h1 {
+            color: #f4b400;
+        }
+
+        nav a {
+            color: white;
+            margin-left: 20px;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        .logo {
+            width: 50px;
+            height: auto;
+        }
+
+        /* HERO */
+        .hero {
+            height: 90vh;
+            background: url("assets/hero.jpg") center/cover no-repeat;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            color: #D4AF37;
+        }
+
+        .hero-content {
+            background: rgba(0, 0, 0, 0.2);
+            padding: 30px;
+        }
+
+        .hero h1 {
+            font-size: 5rem;
+        }
+
+        .hero p {
+            color: white;
+            font-size: 1.25rem;
+            letter-spacing: 5px;
+        }
+
+        .btn {
+            padding: 12px 25px;
+            margin-top: 30px;
+            margin-right: 15px;
+            border: none;
+            cursor: pointer;
+            font-weight: bold;
+            flex-wrap: wrap;
+            /* Allows wrapping on smaller screens */
+        }
+
+        .btn-primary {
+            background: #D4AF37;
+            color: #000;
+        }
+
+        .btn-dark {
+            background: #333;
+            color: white;
+        }
+
+        /* SECTIONS */
+        .section {
+            padding: 60px 50px;
+        }
+
+        .section h2 {
+            margin-bottom: 20px;
+            color: #333;
+        }
+
+        .section h3 {
+            margin-top: 30px;
+            color: #555;
+        }
+
+        /* GRID */
+        .grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 20px;
+        }
+
+
+        .grid img {
+            max-width: 100%;
+            max-height: 100%;
+        }
+
+        .grid .about-text {
+            font-size: 1.8rem;
+            font-weight: 100;
+            padding: 30px;
+            text-align: right;
+            border-top-style: solid;
+            border-bottom-style: solid;
+            border-width: 3px;
+        }
+
+        /* CARD */
+        .card {
+            border: 1px solid #ddd;
+            padding: 10px;
+            height: 100%;
+
+        }
+
+        .card img {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+        }
+
+        .card:hover {
+            transform: scale(1.3);
+        }
+
+        /* CTA */
+        .cta {
+            background: #f4b400;
+            text-align: center;
+            padding: 50px;
+        }
+
+        .cta h2 {
+            margin-bottom: 20px;
+        }
+
+        /* CONTACT */
+        form input,
+        form textarea {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 10px;
+        }
+
+        /* FOOTER */
+        footer {
+            background: #1c1c1c;
+            color: white;
+            text-align: center;
+            padding: 20px;
+        }
+
+        .hero-buttons {
+            display: flex;
+            gap: 15px;
+            justify-content: center;
+            /* center horizontally */
+            align-items: center;
+            flex-wrap: wrap;
+            /* important for mobile */
+            margin-top: 20px;
+        }
+
+        /* RESPONSIVE */
+        @media (max-width: 768px) {
+            .hero h1 {
+                font-size: 40px;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+            }
+
+            .hero p {
+                font-size: 1rem;
+            }
+
+            .hero-buttons {
+                flex-direction: column;
+                width: 100%;
+            }
+
+            .btn {
+                width: 90%;
+                text-align: center;
+                margin-top: 10px;
+            }
+
+
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <img class="logo" src="assets/logo_only.png" alt="Integron Construction Logo">
+        <nav>
+            <a href="#">Home</a>
+            <a href="#">About</a>
+            <a href="#">Services</a>
+            <a href="#projects">Projects</a>
+            <a href="#">Contact</a>
+        </nav>
+    </header>
+
+    <!-- HERO -->
+    <section class="hero">
+        <!-- VIDEO PLACEHOLDER: Replace background with video if needed -->
+        <div class="hero-content">
+            <h1>INTEGRON CONSTRUCTION COMPANY</h1>
+            <p>Precision in Every Piece. Strength in Every Structure.</p>
+            <div class="hero-buttons">
+                <a href="#" class="btn btn-primary">Request a Quote</a>
+                <a href="#" class="btn btn-dark">View Projects</a>
+            </div>
+        </div>
+    </section>
+    <!-- INTRO -->
+    <section class="section">
+        <h2>About Us</h2>
+        <div class="grid">
+            <!-- IMAGE PLACEHOLDER -->
+            <img src="assets/about_us.png" alt="Construction Team">
+            <img src="assets/about_us1.jpg" alt="Construction Team 2">
+
+            <p class="about-text">
+                Integron Construction Limited is a Philippine-based company located in Marilao, Bulacan.
+                We specialize in residential, commercial, and engineering construction services.
+                We are committed to delivering high-quality, safe, and reliable projects with Filipino craftsmanship.
+            </p>
+        </div>
+    </section>
+
+    <!-- SERVICES -->
+    <section class="section">
+        <h2>Our Services</h2>
+        <div class="grid">
+
+            <div class="card">
+                <img src="https://images.unsplash.com/photo-1568605114967-8130f3a36994">
+                <h3>Residential Construction</h3>
+            </div>
+
+            <div class="card">
+                <img src="https://images.unsplash.com/photo-1486406146926-c627a92ad1ab">
+                <h3>Commercial Projects</h3>
+            </div>
+
+            <div class="card">
+                <img src="https://images.unsplash.com/photo-1501183638710-841dd1904471">
+                <h3>Renovation & Fit-Out</h3>
+            </div>
+
+            <div class="card">
+                <img src="https://images.unsplash.com/photo-1503387762-592deb58ef4e">
+                <h3>Engineering & Structural Works</h3>
+            </div>
+
+            <div class="card">
+                <img src="assets/projmanage.jpg" alt="Project Management">
+                <h3>Project Management</h3>
+            </div>
+
+            <div class="card">
+                <img src="https://images.unsplash.com/photo-1507209696998-3c532be9b2b5">
+                <h3>Design & Build</h3>
+            </div>
+
+        </div>
+    </section>
+
+
+    <!-- PROJECTS -->
+    <section class="section" id="projects">
+        <h2>Our Projects</h2>
+        <h3>Recent Works</h3>
+        <div class="grid">
+            <div class="card">
+                <img src="assets/project1.jpg" alt="Avida Vita, Vertis North">
+                <p><strong>Avida Vita, Vertis North</strong><br>Residential Condo Unit</p>
+            </div>
+
+            <!-- BEFORE -->
+            <div class="card">
+                <img src="assets/project2.jpg" alt="Flood Control Project">
+                <p><strong>Hagonoy,Bulacan</strong><br>Flood Control Project</p>
+            </div>
+
+            <div class="card">
+                <img src="assets/project3.jpg" alt="But First Coffee - Sm North Edsa">
+                <p><strong>But First Coffee - Sm North Edsa</strong><br>Commercial Project</p>
+            </div>
+        </div>
+        <h3>Drafted Projects</h3>
+        <div class="grid">
+            <!-- AFTER -->
+            <div class="card">
+                <img src="assets/project4.png" alt="House1">
+                <p><strong>Core Line</strong><br>Residential Project</p>
+            </div>
+
+            <!-- BEFORE -->
+            <div class="card">
+                <img src="assets/project5.png" alt="House2">
+                <p><strong>Prime Line</strong><br>Residential Project</p>
+            </div>
+
+            <div class="card">
+                <img src="assets/project6.png" alt="House3">
+                <p><strong>Prestige Line</strong><br>Residential Project</p>
+            </div>
+
+
+
+        </div>
+    </section>
+
+    <!-- CONTACT -->
+    <section class="section">
+        <h2>Contact Us</h2>
+
+        <p><strong>Phone:</strong> 09667094908</p>
+        <p><strong>Email:</strong> Integron.Const.ph@gmail.com</p>
+
+        <form>
+            <input type="text" placeholder="Name" required>
+            <input type="email" placeholder="Email" required>
+            <textarea placeholder="Message"></textarea>
+            <button class="btn btn-primary">Send Message</button>
+        </form>
+
+        <!-- MAP PLACEHOLDER -->
+        <iframe src="https://maps.google.com/maps?q=bulacan&t=&z=13&ie=UTF8&iwloc=&output=embed" width="100%"
+            height="300">
+        </iframe>
+    </section>
+
+    <!-- CTA -->
+    <section class="cta">
+        <h2>Let’s Build Your Next Project</h2>
+        <button class="btn btn-dark">Get a Free Quote</button>
+    </section>
+
+    <footer>
+        <p>© 2026 Integron Construction Limited | Marilao, Bulacan, Philippines</p>
+    </footer>
+
+</body>
+
+</html>
